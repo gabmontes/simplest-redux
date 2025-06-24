@@ -11,18 +11,7 @@ To do so, I tried two basic examples: [The Gist from the Redux README](https://g
 In both cases, the minimum code required fits into an old Twitter post: 140 characters!
 
 ```js
-let NotRedux = {
-  createStore(e, t) {
-    let r = t,
-      a = [],
-      s = (t) => {
-        (r = e(r, t)), a.map((e) => e());
-      };
-    return (
-      s({}), { dispatch: s, getState: () => r, subscribe: (e) => a.push(e) }
-    );
-  },
-};
+let NotRedux={createStore(e,t){let r=t,a=[],s=t=>{r=e(r,t),a.map(e=>e())};return s({}),{dispatch:s,getState:()=>r,subscribe:e=>a.push(e)}}};
 ```
 
 Of course it lacks most of the extra functionality, runtime checks and even can have a few side effect not present in the original library but what did you expect after shaving off so much code!
@@ -47,4 +36,4 @@ Additionally, you can also copy/paste the minimal code above directly into your 
 
 ## Usage
 
-Replace the installation package/URL, `Redux` with `NotRedux` and pray for it to keep working!
+Replace Redux with the this package/URL, `Redux` with `NotRedux` and pray for it to keep working!

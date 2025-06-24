@@ -1,0 +1,19 @@
+{
+  "name": "simplest-redux",
+  "version": "4.0.0",
+  "description": "What if we reduce Redux to the minimum?",
+  "keywords": [
+    "minimal",
+    "not",
+    "reduced",
+    "redux"
+  ],
+  "bugs": "https://github.com/gabmontes/simplest-redux/issues",
+  "license": "UNLICENSED",
+  "author": "Gabriel Montes <gabriel@utoctadel.com.ar>",
+  "files": [
+    "src"
+  ],
+  "main": "src/simplest-redux.js",
+  "repository": "gabmontes/simplest-redux"
+}
